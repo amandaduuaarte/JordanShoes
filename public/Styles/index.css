@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+header{
+  height:350px;
+  width: 100vw;
+  background: red;
+}
+.firtsContainer,.logoContainer{
+  height:17.14%;
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+}
+.firtsContainer{
+  background:var(--title);
+  padding: 15px;
+  color:var(--bgSite);
+  font-size:1.2rem;
+  font-weight: 500;
+}
+.logoContainer{
+  background:var(--bgSite);
+  padding: 5px;
+}
+.Logo{
+  font-size:1.5rem;
+  line-height:47px;
+}
+.backgroundContainer{
+  height:378px;
+  width:100%;
+  background: url('../../src/assets/images/wallpaper.jpeg') fixed no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+}
+@media only screen and (max-width:920px) {
+  .backgroundContainer{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    background-size: 100% 100%;
+  }
+}
