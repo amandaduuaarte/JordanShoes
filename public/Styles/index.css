@@ -9,6 +9,8 @@
 :root {
   --bgSite: #f6f6f6;
   --bgCard: #ebe9ea;
+  --textColor: #F9F9F9;
+
   
   --white: #fff;
 
@@ -25,18 +27,23 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 header{
-  height:350px;
+  height:40%;
   width: 100vw;
-  background: red;
+  max-width: 1440px;
+}
+main{
+  height:55%;
+  width: 100vw;
+  max-width: 1440px;
+  margin-top:5rem;
+  display:flex;
+  flex-flow: column;
+}
+.infoContainer{
+  display:flex;
+  flex-flow: column;
+  text-align: center;
 }
 .firtsContainer,.logoContainer{
   height:17.14%;
@@ -63,14 +70,54 @@ header{
   height:378px;
   width:100%;
   background: url('../../src/assets/images/wallpaper.jpeg') fixed no-repeat;
-  background-size: cover;
-  filter: brightness(50%);
+  background-size: 100% 100%;
+  filter: brightness(60%);
 }
 @media only screen and (max-width:920px) {
+  /*mobile*/
   .backgroundContainer{
     height:100%;
     width:100%;
     object-fit: cover;
-    background-size: 100% 100%;
+    background-size: 100% 80%;
   }
+  #firstText{
+    font-weight:700;
+    padding: 5rem 2.75rem 0 1.3rem ;
+    font-size:1.75rem;
+  }
+  header{
+    height:35%;
+  }
+  main{
+    height:50%;
+    margin-top:3.12rem;
+  }
+  .textsContainer{
+    font-size: 1.75rem ;
+    line-height:3.75rem;
+  }
+}
+/**Texts**/
+
+.textsBackground{
+  color:var(--textColor);
+  text-align: start;
+}
+.textsContainer{
+  color:var(--title);
+  font-size: 2rem ;
+  font-weight: 600;
+  line-height:3.8rem;
+}
+#firstText{
+  font-weight:700;
+  padding: 15rem 2.75rem 0 1.3rem ;
+  font-size:1.75rem;
+}
+#shoesInfo{
+  padding-bottom:7.6rem;
+  font-size:1.7rem;
+  line-height:1.75rem;
+  padding: 0.75rem 2.3rem 7.6rem 1.25rem ;
 }
