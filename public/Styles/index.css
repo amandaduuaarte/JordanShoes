@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  --textColor: #F9F9F9;
+
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header{
+  height:40%;
+  width: 100vw;
+}
+main{
+  height:55%;
+  width: 100vw;
+  margin-top:5rem;
+}
+.infoContainer{
+  display:flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+.firtsContainer,.logoContainer{
+  height:17.14%;
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+}
+.firtsContainer{
+  background:var(--title);
+  padding: 15px;
+  color:var(--bgSite);
+  font-size:1.2rem;
+  font-weight: 500;
+}
+.logoContainer{
+  background:var(--bgSite);
+  padding: 5px;
+}
+.Logo{
+  font-size:1.5rem;
+  line-height:47px;
+}
+.backgroundContainer{
+  height:378px;
+  width:100vw;
+  background: url('../../src/assets/images/wallpaper.jpg') fixed no-repeat;
+  background-size: 100% 100%;
+}
+footer{
+  height:60px;
+  width:100%;
+  background:var( --title);
+
+  text-align: center;
+  padding: 12px 0 13px 0;
+  color: var(--textColor);
+}
+
+/**Div imgs **/
+.imagesContainer{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imageDiv{
+  height:302px;
+  width:30rem;
+  background: #EBE9EA;
+  margin: 13px;
+  align-items: center;
+}
+.jordan-img{
+  height:10rem;
+  width:18rem;
+  margin: 76px 25px;
+}
+/**Texts**/
+
+.textsBackground{
+  color:var(--textColor);
+  text-align: start;
+}
+.textsContainer{
+  color:var(--title);
+  font-size: 2rem ;
+  font-weight: 600;
+  line-height:3.8rem;
+}
+#firstText{
+  font-weight:700;
+  padding: 15rem 2.75rem 0 6.25rem ;
+  font-size:3.2rem;
+}
+#shoesInfo{
+  padding-bottom:7.6rem;
+  font-size:1.9rem;
+  line-height:2rem;
+  padding: 3rem 2.3rem 7.6rem 6.25rem ;
+}
+/******/
+
+/*breakpoint*/
+@media (min-width:300px) and (max-width:920px) {
+  
+  .backgroundContainer{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    background-size: 100% 80%;
+  }
+  #firstText{
+    padding: 2rem 1.75rem 0 1.3rem ;
+  } 
+  #shoesInfo{
+    padding: 0.75rem 2.3rem 7.6rem 1rem ;
+    font-size: 1rem;
+  }
+  header{
+    height:35%;
+  }
+  main{
+    height:50%;
+    margin-top:3.12rem;
+  }
+  .textsContainer{
+    font-size: 1.75rem ;
+    line-height:3.75rem;
+  }
+  
+  .imagesContainer{
+    flex-flow:column;
+    align-content:center;
+    padding: 0 20px;
+  }
+  .imageDiv{
+    height:302px;
+    width:35.75rem;
+  }
+}
