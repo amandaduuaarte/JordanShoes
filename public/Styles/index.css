@@ -29,7 +29,7 @@ body {
 }
 header{
   height:40%;
-  width: 100vw;
+  width: 100%;
 }
 main{
   height:55%;
@@ -123,40 +123,29 @@ footer{
 /******/
 
 /*breakpoint*/
-@media (min-width:300px) and (max-width:920px) {
-  
-  .backgroundContainer{
-    height:100%;
+@media (min-width:220px) and (max-width:1020px) {
+  header{
     width:100%;
-    object-fit: cover;
-    background-size: 100% 80%;
+    height:500px;
+    margin-bottom:70px;
+  }
+  .firtsContainer,.logoContainer{
+    font-size:1rem;
+    height:50px;
+  }
+  .backgroundContainer{
+    height:500px;
   }
   #firstText{
-    padding: 2rem 1.75rem 0 1.3rem ;
-  } 
+    padding:165px 44px 12px 20px;
+    font-size: 28px;
+  }
   #shoesInfo{
-    padding: 0.75rem 2.3rem 7.6rem 1rem ;
-    font-size: 1rem;
+    padding: 0 37px 122px 20px ;
+    font-size:16px;
+    line-height:28px;
   }
-  header{
-    height:35%;
-  }
-  main{
-    height:50%;
-    margin-top:3.12rem;
-  }
-  .textsContainer{
-    font-size: 1.75rem ;
-    line-height:3.75rem;
-  }
-  
-  .imagesContainer{
-    flex-flow:column;
-    align-content:center;
-    padding: 0 20px;
-  }
-  .imageDiv{
-    height:302px;
-    width:35.75rem;
+  .textsimagem{
+    padding: 5px 20px 59px 20px;
   }
 }
