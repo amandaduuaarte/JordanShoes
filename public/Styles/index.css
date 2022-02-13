@@ -37,12 +37,10 @@ main{
   width: 100vw;
   max-width: 1440px;
   margin-top:5rem;
-  display:flex;
-  flex-flow: column;
 }
 .infoContainer{
   display:flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   text-align: center;
 }
 .firtsContainer,.logoContainer{
@@ -72,7 +70,7 @@ main{
   background: url('../../src/assets/images/wallpaper.jpg') fixed no-repeat;
   background-size: 100% 100%;
 }
-@media only screen and (max-width:920px) {
+@media (min-width:300px) and (max-width:920px) {
   /*mobile*/
   .backgroundContainer{
     height:100%;
@@ -98,6 +96,36 @@ main{
     font-size: 1.75rem ;
     line-height:3.75rem;
   }
+  
+  .imagesContainer{
+    flex-flow:column;
+    align-content:center;
+    padding: 0 20px;
+  }
+  .imageDiv{
+    height:302px;
+    width:35.75rem;
+  }
+}
+
+.imagesContainer{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/**Div imgs **/
+.imageDiv{
+  height:302px;
+  width:30rem;
+  background: #EBE9EA;
+  margin: 13px;
+  align-items: center;
+}
+.jordan-img{
+  height:10rem;
+  width:18rem;
+  margin: 76px 25px;
 }
 /**Texts**/
 
