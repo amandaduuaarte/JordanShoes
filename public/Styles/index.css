@@ -29,12 +29,12 @@ body {
 }
 header{
   height:40%;
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
 }
 main{
   height:55%;
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
   margin-top:5rem;
 }
@@ -149,4 +149,14 @@ main{
   font-size:1.7rem;
   line-height:1.75rem;
   padding: 0.75rem 2.3rem 7.6rem 6.25rem ;
+}
+
+footer{
+  height:60px;
+  width:100%;
+  background:var( --title);
+
+  text-align: center;
+  padding: 12px 0 13px 0;
+  color: var(--textColor);
 }
